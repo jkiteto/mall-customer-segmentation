@@ -18,10 +18,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Set your uploaded image as background
-set_background("c07a576a-5dca-4ce9-8cf6-9c003bbd6fca.png")
-
-
 # --- Custom CSS styling ---
 
 st.markdown("""
