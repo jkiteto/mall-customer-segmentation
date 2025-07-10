@@ -6,29 +6,17 @@ from sklearn.cluster import KMeans
 
 # Page config
 st.set_page_config(page_title="𝗠𝗮𝗹𝗹𝗠𝗶𝗻𝗱𝘀  💼", page_icon="🛍️", layout="centered")
-import base64
-
-def set_background(image_path):
-    with open(image_path, "rb") as image_file:
-        encoded = base64.b64encode(image_file.read()).decode()
-
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("data:image/png;base64,{encoded}");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-set_background("c07a576a-5dca-4ce9-8cf6-9c003bbd6fca.png")
-
+st.markdown("""
+    <style>
+    .stApp {
+        background-image: url("https://i.imgur.com/1XrtHAX.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Set your uploaded image as background
 set_background("c07a576a-5dca-4ce9-8cf6-9c003bbd6fca.png")
